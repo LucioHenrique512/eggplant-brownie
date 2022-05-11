@@ -10,11 +10,12 @@ import UIKit
 class Refeicao: NSObject {
     let nome:String;
     let felicidade:Int;
-    let itens: Array<Item> = [];
+    let itens: Array<Item>;
     
-    init(nome:String,felicidade:Int) {
+    init(nome:String,felicidade:Int, itens:Array<Item> = []) {
         self.nome = nome;
         self.felicidade = felicidade;
+        self.itens = itens;
     }
     
     func toString()->String{

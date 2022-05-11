@@ -15,4 +15,8 @@ class Item: NSObject {
         self.nome = nome;
         self.calorias = calorias;
     }
+    
+    func toString() -> String{
+        return "nome:\(nome), calorias:\(calorias)"
+    }
 }
